@@ -1,0 +1,29 @@
+{
+  "name": "vue-pug-syntax",
+  "version": "1.0.1",
+  "description": "Use Pug syntax in Vue",
+  "license": "MIT",
+  "author": "hellolin",
+  "type": "module",
+  "keywords": [
+    "vue",
+    "vite",
+    "template",
+    "pug"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VLTHellolin/vue-pug-syntax.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -r dist/ && tsc",
+    "test": "pnpm build && node ./test/index.js",
+    "pub": "pnpm build && npm publish"
+  },
+  "dependencies": {
+    "pug": "^3.0.2",
+    "typescript": "^5.4.5"
+  }
+}
